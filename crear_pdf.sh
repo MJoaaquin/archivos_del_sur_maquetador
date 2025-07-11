@@ -36,14 +36,14 @@ sed -i 's/^SALTODEPAGINA$/#pagebreak()/' "$TYP_FILE"
 # 3. Combinar con la plantilla
 {
   echo '
-    #import "conf.typ": conf
-    #show: conf
+  #import "../conf.typ": conf
+  #show: conf.with()
   '
   echo ""
   cat "$TYP_FILE"
 } > "$FINAL_TYP_FILE"
 
 # 4. Compilar archivo final con plantilla a PDF
-typst compile "$FINAL_TYP_FILE" "$PDF_FILE"
+typst compile --root . "$FINAL_TYP_FILE" "$PDF_FILE"
 
 echo "✅ PDF generado: $PDF_FILE"
