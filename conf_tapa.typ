@@ -4,6 +4,8 @@
   margin: 0pt,
 )
 
+#let color = 	rgb("#C70039")
+
 #set text(
   font: "Alatsi"
 )
@@ -13,11 +15,11 @@
   rows: (8%, 2%, 80%, 10%),
   align(
     center + horizon,
-    text(30pt, fill: maroon, "ARCHIVOS DEL SUR")
+    text(30pt, fill: color, "ARCHIVOS DEL SUR")
   ),
   align(
     center + horizon,
-    text(size: 14pt, fill: maroon, weight: "bold", "Subcomisión de la Biblioteca Popular Osvando Bayer")
+    text(size: 14pt, fill: color, weight: "bold", "Subcomisión de la Biblioteca Popular Osvando Bayer")
   ),
   align(
     center + horizon,
@@ -46,7 +48,7 @@
   ),
   align(center + bottom, box(
         inset: (bottom: 25pt),
-        text(12pt, fill: maroon, "Publicación N° 12 | Septiembre 2025 | Villa La Angostura | Neuquén")
+        text(12pt, fill: color, "Publicación N° 12 | Septiembre 2025 | Villa La Angostura | Neuquén")
       )),
 )
 
@@ -74,7 +76,7 @@
     box(
     width: 100%,
     height: 85%,
-    fill: maroon,
+    fill: color,
     inset: 0pt,
     contenido_lomo
   )
@@ -85,11 +87,11 @@
   rows: (50%, 50%),
   align(center + top, box(
         inset: (top: 17pt),
-        text(15pt, fill: maroon, "Archivos del Sur")
+        text(15pt, fill: color, "Archivos del Sur")
       )),
   align(center + bottom, box(
         inset: (bottom: 17pt),
-        text(12pt, fill: maroon, "LOGOS + ISBN")
+        text(12pt, fill: color, "LOGOS + ISBN")
       )),
 )
 
