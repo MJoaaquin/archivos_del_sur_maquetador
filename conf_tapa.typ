@@ -10,23 +10,26 @@
 
 #let contenido_tapa = grid(
   columns: (100%),
-  rows: (10%, 80%, 10%),
-  align(center + horizon, text(30pt, fill: maroon, "ARCHIVOS DEL SUR")),
+  rows: (8%, 2%, 80%, 10%),
+  align(
+    center + horizon,
+    text(30pt, fill: maroon, "ARCHIVOS DEL SUR")
+  ),
+  align(
+    center + horizon,
+    text(size: 14pt, fill: maroon, weight: "bold", "Subcomisión de la Biblioteca Popular Osvando Bayer")
+  ),
   align(
     center + horizon,
     box[
-      #image("libro_coti/imagenes/tapa.jpg")
-      #place(
-        center + top,
-        dy: 10pt,
-        text(fill: white, size: 14pt, weight: "bold", "Subcomisión de la Biblioteca Popular Osvando Bayer")
-      )
-      #place(
-        right + top,
-        dy: 30pt,
-        dx: -15pt,
-        text(fill: white, size: 30pt, weight: "bold", "Coti Carmoney")
-      )
+      #box(width: 80%)[
+        #image("libro_coti/imagenes/tapa.jpg", width: 100%)
+        #place(bottom, box(
+          width: 100%,
+          height: 12%,
+          fill: black.transparentize(50%),
+        ))
+      ]
       #place(
         right + bottom,
         dy: -30pt,
